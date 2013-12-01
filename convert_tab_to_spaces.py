@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     def main():
         parser = argparse.ArgumentParser(description='Process some integers.')
-        parser.add_argument('file_patterns', type=str, nargs=1, help='file patterns')
+        parser.add_argument('file_patterns', type=str, nargs='+', help='file patterns')
         parser.add_argument('-R', '--recursive', action='store_true', help='Recursively convert subdirectories listed')
 
         args = parser.parse_args()
